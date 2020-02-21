@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>iPhoneFix</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('.qna').click(function() {
+                var offset = $('#qna').offset();
+                $('html').animate({
+                    scrollTop: offset.top
+                }, 250);
+            });
+            
+            $('.top').click(function() {
+                var offset = $('#top').offset();
+                $('html').animate({
+                    scrollTop: offset.top
+                }, 250);
+            });
+        });
+
+    </script>
+    
+    <noscript>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+    <link rel='stylesheet' href="css/elppa.css">
+</head>
+
+<body id="top">
+
+    <!-- Header -->
+    <header id="header" class="skel-layers-fixed">
+        <h1><a href="#">iPhoneFix</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class='qna'>문의</a></li>
+                <li><a class="#">예약</a></li>
+                <li><a href="#">iPhoneFix란?</a></li>
+                <li><a href="#">오시는 길</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <section id="main" class="wrapper style1">
+        <header class="major">
+            <h2>방문 예약 페이지</h2>
+            <p>iPhoneFix를 이용해주셔서 감사합니다.</p>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="4u">
+                    <section>
+                        <h3>이용 안내</h3>
+                        <p>영업일<br>평일 00:00 ~ 00:00<br>주말 00:00 ~ 00:00<br>공휴일은 <b style="color:red">휴무일</b>입니다.<br><br>예약한 시간대에 선약이 있을 경우 문자로<br>안내해 드리며 시간이 변동 될 수 있습니다.<br>최대한 고객님의 예약 시간에 맞춰드리겠습니다.<br><br>감사합니다.</p>
+                    </section>
+
+                    <section>
+                        <ul class="actions">
+                            <!-- 추가 내용 -->
+                        </ul>
+                    </section>
+                </div>
+                <div class="8u skel-cell-important">
+                    <section>
+                        <h2>신청서 작성</h2>
+
+                        <label>이름<input type='text' id='name' placeholder="이름을 입력해주세요"></label>
+                        <label>연락처<input type='text' id='phone' placeholder="연락처 입력해주세요 /&nbsp;&nbsp;' - ' 없이 입력"></label>
+                        <label>방문 시간<input type='text' id='time' placeholder="17:30"></label>
+                        <label>기종
+                            <select id="device">
+                                <option>기종을 선택해주세요</option>
+                                <option value='아이폰'>아이폰</option>
+                                <option value='아이팟'>아이팟</option>
+                                <option value='아이패드'>아이패드</option>
+                                <option value='맥북'>맥북</option>
+                            </select>
+                        </label>
+                        <label>증상<textarea id="error" style="width: 100%; height:200px;" placeholder="증상을 가능한 상세히 적어주세요"></textarea></label>
+                        <button class="btn" onclick="alert('예약 접수가 되었습니다!');">예약하기</button>
+                    </section>
+                </div>
+            </div>
+            <hr class="major" />
+
+            <div class='12u center' id='qna'>
+                <h3><b style="color:black;">실시간 상담</b></h3>
+                <p><b style="color:black;">상담 가능 시간 | 평일 : 00:00 ~ 00:00 | 주말 : 00:00 ~ 00:00 | 공휴일은 <span style="color:red;">휴무일</span>입니다.</b></p>
+                <a href="https://open.kakao.com/o/sE1svdYb" class="button alt qnabtn"><b style="color:black;">상담 바로가기</b></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- <div class="row double">
+                <div class="6u">
+                    <div class="row collapse-at-2">
+                        <div class="6u">
+                            <h3>Accumsan</h3>
+                            <ul class="alt">
+                                <li><a href="#">Nascetur nunc varius</a></li>
+                                <li><a href="#">Vis faucibus sed tempor</a></li>
+                                <li><a href="#">Massa amet lobortis vel</a></li>
+                                <li><a href="#">Nascetur nunc varius</a></li>
+                            </ul>
+                        </div>
+                        <div class="6u">
+                            <h3>Faucibus</h3>
+                            <ul class="alt">
+                                <li><a href="#">Nascetur nunc varius</a></li>
+                                <li><a href="#">Vis faucibus sed tempor</a></li>
+                                <li><a href="#">Massa amet lobortis vel</a></li>
+                                <li><a href="#">Nascetur nunc varius</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="6u">
+                    <h2>Aliquam Interdum</h2>
+                    <p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <ul class="copyright">
+                <li>iPhoneFix</li>
+                <li><a href="tel:01000000000">연락처</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body></html>
