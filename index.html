@@ -17,6 +17,25 @@
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $('.qna').click(function() {
+                var offset = $('#two').offset();
+                $('html').animate({
+                    scrollTop: offset.top
+                }, 150);
+            });
+            
+            $('.top').click(function() {
+                var offset = $('#top').offset();
+                $('html').animate({
+                    scrollTop: offset.top
+                }, 150);
+            });
+        });
+
+    </script>
+
     <noscript>
         <link rel="stylesheet" href="css/skel.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -32,9 +51,9 @@
         <h1><a href="#">iPhoneFix</a></h1>
         <nav id="nav">
             <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href='#two'>문의</a></li>
-                <li><a href="#two">예약</a></li>
+                <li><a class="top">Home</a></li>
+                <li><a class="qna">문의</a></li>
+                <li><a class="qna">예약</a></li>
                 <li><a href="#">오시는 길</a></li>
             </ul>
         </nav>
@@ -146,11 +165,11 @@
 					</div>
 				</div>
     </section> -->
-			
-		<!-- Footer -->
+
+    <!-- Footer -->
     <footer id="footer">
         <div class="container">
-           <!-- <div class="row double">
+            <!-- <div class="row double">
                 <div class="6u">
                     <div class="row collapse-at-2">
                         <div class="6u">
